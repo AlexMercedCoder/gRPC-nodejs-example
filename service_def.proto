@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message Empty {}
+
+message Dog {
+    string name = 1;
+    int32 age = 2;
+}
+
+service DogService {
+    rpc GetDog (Empty) returns (Dog) {}
+}
